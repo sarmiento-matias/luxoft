@@ -1,0 +1,24 @@
+<app-users-list [users]="users"></app-users-list>
+<hr>
+
+<div [formGroup]="userForm">
+  <div >
+    <div>
+      <label>First Name</label>
+      <input type="text" formControlName="firstName" />
+    </div>
+
+    <div>
+      <label>Last Name</label>
+      <input type="text" formControlName="lastName" />
+    </div>
+    <div>
+      <label>Email</label>
+      <input type="email" formControlName="email" />
+    </div>
+  </div>
+  <h4>Implement selection here</h4>
+  <button (click)="addUser()">Add</button>
+
+
+</div>
